@@ -146,6 +146,7 @@ nav {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .advantages-p {
   color: #757575;
@@ -164,15 +165,33 @@ nav {
 .advantages-ul > li {
   position: relative;
 }
-.advantages-ul > li:before {
+/* .advantages-ul > li:before {
   content: '';
   display: block;
   width: 270px;
   height: 120px;
   border-radius: 4px;
   background: #f5f4fa;
+  background-image: url(./symbol-defs.svg#icon-antena-omg);
+} */
+.lishka::before {
+  content: '';
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
+.before-antenna::before {
+  content: '';
+  /* display: block; */
+  background-image: url(./antena.svg);
+  margin-bottom: 30px;
+  /* width: 20px;
+  height: 20px; */
+}
 /* .svg-absolute {
   position: absolute;
   width: 70px;
